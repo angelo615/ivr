@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IVR for Run - Magazin Articole Sportive</title>
+    <style>
+        /* CSS pentru designul cu background negru */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Setăm background-ul negru */
+            color: white; /* Culoarea textului devine albă pentru contrast */
+        }
+        header {
+            background-color: black; /* Lăsăm fundalul header-ului negru */
+            color: #e67e22; /* Culoarea portocalie pentru textul header-ului */
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+        header img {
+            max-width: 150px; /* Dimensiunea logo-ului */
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto; /* Centrarea logo-ului */
+        }
+        nav {
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #e67e22;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .product {
+            background-color: #34495e;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            font-size: 18px;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #bdc3c7;
+        }
+        .product .price {
+            font-size: 20px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d35400;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Adăugăm logo-ul aici -->
+    <img src="logo.jpg" alt="IVR for Run Logo">
+    <h1>IVR for Run</h1>
+</header>
+
+<nav>
+    <a href="#">Acasă</a>
+    <a href="#">Categorii</a>
+    <a href="#">Promoții</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <!-- Primul produs - Nike Joggers Pants -->
+    <div class="product">
+        <img src="https://ajebomarket.com/cdn/shop/files/a-4e01.jpg?v=1707066209.jpg" alt="Nike Joggers Pants">
+        <h3>Nike Joggers Pants</h3>
+        <p>Confort pentru alergare și antrenamente.</p>
+        <div class="price">300.00 RON</div>
+        <button>Adaugă în coș</button>
+    </div>
+
+    <!-- Al doilea produs - Mini Baschet LeBron James -->
+    <div class="product">
+        <img src="https://i.sportisimo.com/products/images/1585/1585260/700x700/wilson-nba-player-icon-mini-bskt-lebron-3_1.jpg" alt="Mini Baschet LeBron James">
+        <h3>Mini Baschet LeBron James</h3>
+        <p>Mini baschet Wilson NBA Player Icon.</p>
+        <div class="price">149.99 RON</div>
+        <button>Adaugă în coș</button>
+    </div>
+
+    <!-- Al treilea produs - Nike Air Jordan 2 -->
+    <div class="product">
+        <img src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/004/108/514/91c0336e4e3b29c38bac45ca98569b2b_crop_exact.jpg" alt="Nike Air Jordan 2">
+        <h3>Nike Air Jordan 2</h3>
+        <p>O pereche venerică pentru baschet.</p>
+        <div class="price">2000.00 RON</div>
+        <button>Adaugă în coș</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 IVR for Run - Magazin Articole Sportive</p>
+    <div class="footer-links">
+        <a href="#">Termeni și condiții</a>
+        <a href="#">Politica de confidențialitate</a>
+    </div>
+</footer>
+
+</body>
+</html>
